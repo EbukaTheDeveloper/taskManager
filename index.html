@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Todoo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+  <body>
+    <header class="hide">
+        <section class="headerChild-1">
+            <button aria-label="Main menu" class="menu-btn">
+                <svg style="width:28px;height:28px" viewBox="0 0 24 24" class="open-menu for-menu">
+                    <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+                </svg>
+                <svg style="width:28px;height:28px" viewBox="0 0 24 24" class="hide close for-menu">
+                    <path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                </svg>
+            </button>
+            <p class="brandTitle">ToDoo</p>
+        </section>
+    </header>
+    <section class="hide overlay">
+            <nav class="link-container">
+                <a href="#" class="today link">
+                    <svg style="width:32px;height:32px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M3.55 19.09L4.96 20.5L6.76 18.71L5.34 17.29M12 6C8.69 6 6 8.69 6 12S8.69 18 12 18 18 15.31 18 12C18 8.68 15.31 6 12 6M20 13H23V11H20M17.24 18.71L19.04 20.5L20.45 19.09L18.66 17.29M20.45 5L19.04 3.6L17.24 5.39L18.66 6.81M13 1H11V4H13M6.76 5.39L4.96 3.6L3.55 5L5.34 6.81L6.76 5.39M1 13H4V11H1M13 20H11V23H13" />
+                    </svg>
+                    <p class="p-today">
+                        <span>Today</span>
+                        <span>0 Task</span>
+                    </p>
+                </a>
+                <a href="#" class="planned link">
+                    <svg style="width:32px;height:32px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M9.05,9H7.06V6H9.05V4.03H7.06V3.03C7.06,1.92 7.95,1.04 9.05,1.04H15.03V8L17.5,6.5L20,8V1.04H21C22.05,1.04 23,2 23,3.03V17C23,18.03 22.05,19 21,19H9.05C8,19 7.06,18.05 7.06,17V16H9.05V14H7.06V11H9.05V9M1,18H3V15H1V13H3V10H1V8H3V5H5V8H3V10H5V13H3V15H5V18H3V20H5V21H21V23H5A2,2 0 0,1 3,21V20H1V18Z" />
+                    </svg>
+                    <p class="p-planned">
+                        <span>Planned</span>
+                        <span>0 Task</span>
+                    </p>
+                </a>
+                <a href="#" class="personal link">
+                    <svg style="width:32px;height:32px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M21.1,12.5L22.5,13.91L15.97,20.5L12.5,17L13.9,15.59L15.97,17.67L21.1,12.5M10,17L13,20H3V18C3,15.79 6.58,14 11,14L12.89,14.11L10,17M11,4A4,4 0 0,1 15,8A4,4 0 0,1 11,12A4,4 0 0,1 7,8A4,4 0 0,1 11,4Z" />
+                    </svg>
+                    <p class="p-personal">
+                        <span>Personal</span>
+                        <span>0 Task</span>
+                    </p>
+                </a>
+                <a href="#" class="work link">
+                    <svg style="width:32px;height:32px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M10,2H14A2,2 0 0,1 16,4V6H20A2,2 0 0,1 22,8V19A2,2 0 0,1 20,21H4C2.89,21 2,20.1 2,19V8C2,6.89 2.89,6 4,6H8V4C8,2.89 8.89,2 10,2M14,6V4H10V6H14Z" />
+                    </svg>
+                    <p class="p-work">
+                        <span>Work</span>
+                        <span>0 Task</span>
+                    </p>
+                </a>
+                <a href="#" class="shopping link">
+                    <svg style="width:32px;height:32px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M12,13A5,5 0 0,1 7,8H9A3,3 0 0,0 12,11A3,3 0 0,0 15,8H17A5,5 0 0,1 12,13M12,3A3,3 0 0,1 15,6H9A3,3 0 0,1 12,3M19,6H17A5,5 0 0,0 12,1A5,5 0 0,0 7,6H5C3.89,6 3,6.89 3,8V20A2,2 0 0,0 5,22H19A2,2 0 0,0 21,20V8C21,6.89 20.1,6 19,6Z" />
+                    </svg>
+                    <p class="p-shipping">
+                        <span>Shopping</span>
+                        <span>0 Task</span>
+                    </p>
+                </a>
+        </nav>
+    </section>
+    <main>
+        <section class="landing-page">
+            <section class="image-holder">
+                <picture>
+                    <img src="./images/todoIcon.jpg"
+                    alt=""
+                    width="450"
+                    height="350"
+                    loading="eager"
+                    class="decorated">  
+                </picture>
+            </section>
+            <section class="text-holder">
+                <h1>
+                    Get Organized Your Life
+                </h1>
+                <p>
+                    Todoo is a simple and effective to-do list and task manager app which helps you manage
+                    time and help you get productive.
+                </p>
+                <button class="get-started">
+                    Get Started
+                </button>
+            </section>
+        </section>
+       <section class="hide t-t">
+            <div class="task-title">
+                <div class="title-name">
+                    <svg style="width:32px;height:32px" viewBox="0 0 24 24" class="svg-task">
+                        <path fill="currentColor" d="M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,2L14.39,5.42C13.65,5.15 12.84,5 12,5C11.16,5 10.35,5.15 9.61,5.42L12,2M3.34,7L7.5,6.65C6.9,7.16 6.36,7.78 5.94,8.5C5.5,9.24 5.25,10 5.11,10.79L3.34,7M3.36,17L5.12,13.23C5.26,14 5.53,14.78 5.95,15.5C6.37,16.24 6.91,16.86 7.5,17.37L3.36,17M20.65,7L18.88,10.79C18.74,10 18.47,9.23 18.05,8.5C17.63,7.78 17.1,7.15 16.5,6.64L20.65,7M20.64,17L16.5,17.36C17.09,16.85 17.62,16.22 18.04,15.5C18.46,14.77 18.73,14 18.87,13.21L20.64,17M12,22L9.59,18.56C10.33,18.83 11.14,19 12,19C12.82,19 13.63,18.83 14.37,18.56L12,22Z" />
+                    </svg>
+                    <p class="p-t">
+                            Today
+                    </p>
+                </div>
+            </div> 
+       </section>
+        <section class="hide sec">
+            <div class="Task-number">
+                <p>0 Task</p>
+            </div>
+            <div class="today-tasks">
+                <div class="today-task-lists"></div>
+            </div>
+            <div class="personal-tasks">
+                <div class="personal-task-lists"></div>
+            </div>
+            <div class="planned-tasks">
+                <div class="planned-task-lists"></div>
+            </div>
+            <div class="work-tasks">
+                <div class="work-task-lists"></div>
+            </div>
+            <div class="shopping-tasks">
+                <div class="shopping-task-lists"></div>
+            </div>
+        </section>
+        <section class="hide" id="modal">
+           <div class="modal-card">
+            <div class="modal-header">
+                <p>Add Task</p>
+                <button class="close-form">
+                    <svg style="width:30px;height:30px" viewBox="0 0 24 24" class="close-svg">
+                        <path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-content">
+                <form action="get" class="task-form">
+                    <div class="form-title">
+                        <label for="title" class="title-label">
+                            Title 
+                            <span class="star-required">*</span>
+                        </label>
+                        <input type="text" placeholder="e.g Visit my brother" required="" id="title" name="task-title" class="input-title" autocomplete="off">
+                    </div>
+                    <div class="form-description">
+                        <label class="des-label" for="description">Description</label>
+                        <textarea name="task-description" id="description" rows="10" cols="30"></textarea>
+                    </div>
+                    <div class="date-container">
+                        <label class="date-label" for="dueDate">Due Date</label>
+                        <input type="date"  name="due-Date" id="dueDate">
+                    </div>
+                    <div class="priority-container">
+                        <label class="priority-label" for="priority">Priority</label>
+                        <select name="task-priority" id="priority">How important is this task
+                            <option value="not-important">Not important</option>
+                            <option value="a-bit-important">A bit important</option>
+                            <option value="super-important">Super important</option>
+                        </select>
+                    </div>
+                    <div class="btn-container">
+                        <button type="button" class="cancel">Cancel</button>
+                        <button type="button" class="add">Add</button>
+                    </div>
+                </form>
+            </div>
+           </div>
+        </section>
+        <section class="edit-form-overlay"></section>
+        <section class="task-details-container"></section>
+    </main>
+    <footer>
+        <section class="hide t-adderH" aria-label="floating action buttons">
+            <button class="task-adder-btn" aria-label="Add new task" title="add new task">
+                <svg aria-hidden="true" style="width:50px;height:50px" viewBox="0 0 24 24" class="svg-plus">
+                    <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                </svg>
+            </button>
+        </section>
+    </footer>
+    <script defer src="bundle.js"></script>
+  </body>
+</html>
